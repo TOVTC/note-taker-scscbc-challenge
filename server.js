@@ -21,13 +21,12 @@ app.get("/api/notes", (req, res) => {
     res.json(notes);
 });
 
-app.post("/notes", (req, res) => {
+app.post("/api/notes", (req, res) => {
     req.body.id = notes.length.toString();
     notes.push(req.body);
-    console.log(notes);
     fs.writeFileSync(
         path.join(__dirname, "./db/db.json"),
-        JSON.stringify({notes}, null, 2)
+        JSON.stringify(notes, null, 2)
     );
     res.json(notes);//idk about these two lol
     return notes; //idk about these two lol
