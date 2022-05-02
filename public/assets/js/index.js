@@ -68,7 +68,7 @@ const renderActiveNote = () => {
 
 const handleNoteSave = () => {
   const newNote = {
-    title: noteTitle.value,
+    title: `${noteTitle.value} - (${new Date().getFullYear()}/${new Date().getMonth() + 1}/${new Date().getDate()})`,
     text: noteText.value,
   };
   saveNote(newNote).then(() => {
