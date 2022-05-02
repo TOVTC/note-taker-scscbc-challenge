@@ -28,7 +28,7 @@
   This application can be accessed at the live URL. For developers, after cloning the repository, ensure that npm uniqid and Express.js are installed.
   
   ## Usage Information<a name="usage"></a>
-  [Note Taker]("https://stark-sea-34689.herokuapp.com")</br>
+  [Note Taker](https://stark-sea-34689.herokuapp.com)</br>
     
   This application allows users to access notes on any device.</br>
   </br>![Note Taker](./note-taker.png "Note Taker")</br>
